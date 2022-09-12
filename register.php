@@ -141,10 +141,6 @@
             <h3 class="heading">Đăng ký</h3>
 
             <div class="spacer"></div>
-            <div class="form-group">
-                <label htmlFor="name" class="form-label">Name</label>
-                <input id="name" name="name" type="text" placeholder="Ung Hung" class="form-control" required />
-            </div>
 
             <div class="form-group">
                 <label htmlFor="username" class="form-label">Usename</label>

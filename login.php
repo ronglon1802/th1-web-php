@@ -121,7 +121,7 @@ and open the template in the editor.
         include './connectDb.php';
         $error = false;
         if (isset($_POST['username']) && !empty($_POST['username']) && isset($_POST['password']) && !empty($_POST['password'])) {
-            $result = mysqli_query($con, "Select `id`,`username` from `user` WHERE (`username` ='" . $_POST['username'] . "' AND `password` = md5('" . $_POST['password'] . "'))");
+            $result = mysqli_query($con, "Select `id`,`username` from `member` WHERE (`username` ='" . $_POST['username'] . "' AND `password` = md5('" . $_POST['password'] . "'))");
             if (!$result) {
                 $error = mysqli_error($con);
             } else {
